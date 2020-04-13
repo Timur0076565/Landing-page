@@ -1,0 +1,142 @@
+.header {
+
+}
+
+.header .row {
+  height: 60px;
+}
+
+.header__link {
+  color: #297CE0;
+  text-decoration: none;
+  border-bottom: 1px dashed #297CE0;
+  margin-right: 20px;
+}
+.burger-menu,
+.header__logo-mb {
+  display: none;
+}
+/* .active {
+  right: 0rem;
+} */
+.pop-up__menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 20rem;
+  background-color: #2F2E41;
+  transition: 2s ease all;
+  z-index: 20;
+  padding: 1rem;
+}
+@media (max-width: 750px) {
+  .justify-between {
+    align-items: center;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__logo-mb,
+  .burger-menu {
+    display: flex;
+  }
+  .header__auth {
+    display: none;
+  }
+
+  
+  .burger-menu::before {
+    content: '';
+    position: absolute;
+    top: -21px;
+    right: 55px;
+    width: 1px;
+    background-color: #EBEAEA;
+    height: 60px;
+
+  }
+  .burger-menu {
+    width: 40px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 15;
+    position: relative;
+  }
+  .burger-menu_span::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 18px;
+    height: 1.5px;
+    background-color: #1E6AFF;
+    border-radius: 50px;
+  }
+  .burger-menu_span {
+    width: 18px;
+    height: 1.5px;
+    background-color: #1E6AFF;
+    border-radius: 50px;
+    position: relative;
+  }
+  .burger-menu_span::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 18px;
+    height: 1.5px;
+    background-color: #1E6AFF;
+    border-radius: 50px;
+  }
+  .menu__close{
+    width: 18px;
+    height: 18px;
+    padding: 10px 0 0 10px;
+  }
+  .menu__close_span::before {
+    content: '';
+    position: absolute;
+    top: -0rem;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50px;
+    transform: rotate(-90deg);
+  }
+  .menu__close_span {
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  .pop-up_menu__ul {
+    text-align: center;
+    padding: 0;
+  }
+  .pop-up__li{
+    list-style: none;
+    padding: 5% 0;
+  }
+  .header__link-mob{
+    font-size: 18px;
+    padding: 1% 0;
+    margin-right: 0;
+    color: #fff;
+    border-bottom: 1px dashed #FFF;
+  }
+  .btn-mob{
+    width: 158px;
+    text-transform: uppercase;
+  }
+}
+
+

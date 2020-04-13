@@ -1,0 +1,27 @@
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #F7F8FB;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+img {
+  max-width: 100%;
+}

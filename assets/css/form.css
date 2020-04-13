@@ -1,0 +1,164 @@
+.form {
+  background-color: #5294E6;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #ffffff;
+}
+
+.form h2 {
+  font-size: 34px;
+  margin-top: 0;
+}
+
+.form label {
+  display: block;
+  margin-top: 25px;
+}
+
+.form__label {
+  display: block;
+  font-size: 15px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  height: 46px;
+  box-sizing: border-box;
+  border: 2px solid #EFEFF2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #FFF;
+  padding-left: 15px;
+  padding-right: 15%;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form button {
+  width: 100%;
+  height: 46px;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(41, 124, 224, 0.1);
+  border-radius: 8px;
+  color: #202020;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.form__terms input {
+  display: none;
+}
+
+.form__terms label {
+  position: relative;
+  padding-left: 45px;
+  line-height: 150%;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form__terms label a {
+  color: #FFF;
+  text-decoration: none;
+  border-bottom: 1px dashed #FFF;
+}
+
+.form__terms span {
+  left: 0;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.form__terms span::before {
+  content: '';
+  width: 12px;
+  height: 9px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  margin: auto;
+  background-image: url('../img/icon-checked.svg');
+  transition: 0.3s;
+}
+
+.form__terms input:checked + span::before {
+  opacity: 1;
+}
+
+.form__time {
+  width: 123px;
+  height: 107px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../img/icon-timing.svg');
+  background-size: cover;
+}
+
+
+@media (max-width: 1000px) {
+  .col-mb-form{
+    flex-basis: 100%!important;
+    max-width: 100%!important; 
+    padding: 0 20%;
+  }
+
+}
+@media (max-width: 750px) {
+  .form {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .col-mb-form {
+    padding: 0 10% 5%;
+}
+  .form h2 {
+    font-size: 25px;
+  }
+  .mob-d-none{
+    display: none;
+  }
+
+  .form__time {
+    width: 52.82px;
+    height: 52.82px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/icon-timing-mb.svg');
+    background-size: cover;
+    position: relative;
+  }
+  .form__time-mob::after{
+    content: 'Среднее время отклика';
+    position: absolute;
+    top: 13px;
+    left: 60px;
+    color: #fff;
+    font-size: 15px;
+    width: 65vw;
+  }
+}
+@media (max-width: 450px) {
+  .col-mb-form{
+    padding: 0 5% 10%;
+  }
+}
