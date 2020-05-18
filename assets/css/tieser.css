@@ -4,6 +4,7 @@
   padding-bottom: 8%;
   background-color: #5294E6;
   color: #fff;
+  z-index: -2;
 }
 
 .tieser::before {
@@ -23,6 +24,72 @@
 .tieser h1 {
   font-size: 56px;
   margin-top: 0;
+}
+
+.tieser__title::before,
+.tieser__title::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    padding: 0 18px;
+    z-index: -1;
+}
+.tieser__title::before {
+    color: #39374E;
+    -webkit-animation: glitc-effect 6s infinite;
+    animation: glitc-effect 6s infinite;
+}
+.tieser__title::after  {
+    color: #1D579E;
+    -webkit-animation: glitc-effect 5s infinite;
+    animation: glitc-effect 5s infinite;
+}
+@-webkit-keyframes glitc-effect {
+    0%{
+        left: -3px;
+        top: -3px;
+    }
+    25%{
+        left: 3px;
+        top: 0px;
+    }
+    50%{
+        left: -2px;
+        top: 3px;
+    }
+    75%{
+        left: 2px;
+        top: -2px;
+    }
+    100%{
+        left: 0px;
+        top: -3px;
+    }
+}
+@keyframes glitc-effect {
+    0%{
+        left: -3px;
+        top: -3px;
+    }
+    25%{
+        left: 3px;
+        top: 0px;
+    }
+    50%{
+        left: -2px;
+        top: 3px;
+    }
+    75%{
+        left: 2px;
+        top: -2px;
+    }
+    100%{
+        left: 0px;
+        top: -3px;
+    }
 }
 
 .tieser p {
